@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    background-color: #fff;
+    color: #17181f;
+    font-family: "poppins",sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+*{
+    box-sizing:border-box;
+}
+form{
+    border: 3px solid #303130;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+}
+main{
+    max-width: 600px;
+    margin: 100px auto;
+}
+form input[type="text"]{
+    background: none;
+    border: 0;
+    padding: 0 8px;
+    display: block;
+    width: 100%;
+}
+
+form button{
+    background-color: black;
+    color: #fff;
+    padding: 6px;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+   
+}
+div.task{
+    background-color: #ddd;
+    border-radius: 10px;
+    padding: 5px ;
+    margin-top: 8px;
+    display: flex;
+    transition: opacity .3s linear;
+    
+}
+div.task svg{
+    height: 20px;
+    margin: 4px 6px 0 0;
+    
+    
+}
+.checkbox-check{
+    fill:#28a745;
+}
+div.task.done{
+    opacity: 0.3;
+    text-decoration: line-through;  
+}
+h1{
+   font-weight:900;
+}
+
+div.task-name,div.task form{
+    flex-grow: 1;
+}
+.trash :hover{
+    fill: red;
+}
+.checkbox-check :hover{
+    fill:#28a745;
+}
+.checkbox-uncheck :hover{
+    fill:#28a745;
+}
+div.task input{
+    border-radius: 5px;
+    padding: 0;
+}
